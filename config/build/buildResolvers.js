@@ -1,5 +1,5 @@
 export function buildResolvers() {
-    return {
-        extensions: ['.js', '.jsx']
-    }
+  return {
+    extensions: ['.js', '.jsx'],
+  };
 }

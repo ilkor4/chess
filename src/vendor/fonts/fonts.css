@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: Merriweather;
+    src: local('Merriweather Regular'), local('Merriweather-Regular'),
+        url('Merriweather-Regular.woff') format('woff'),
+        url('Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: local('Merriweather Light'), local('Merriweather-Light'),
+        url('Merriweather-Light.woff') format('woff'),
+        url('Merriweather-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: local('Merriweather Bold'), local('Merriweather-Bold'),
+    url('Merriweather-Bold.woff') format('woff'),
+    url('Merriweather-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: local('Merriweather Black'), local('Merriweather-Black'),
+        url('Merriweather-Black.woff') format('woff'),
+        url('Merriweather-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
