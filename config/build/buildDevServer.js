@@ -3,5 +3,6 @@ export function buildDevServer(options) {
   return {
     port: port,
     open: true,
+    hot: true
   };
 }

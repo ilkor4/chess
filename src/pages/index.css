@@ -1,8 +1,12 @@
-@import url("../vendor/normalize.css");
+@import url("../vendor/styles/normalize.css");
 @import url("../vendor/fonts/fonts.css");
+@import url("../vendor/styles/global.css");
+@import url("../blocks/lead/lead.css");
+@import url("../blocks/lead-description/lead-description.css");
+@import url("../blocks/text-button/text-button.css");
 
-.text {
-  font-family: Merriweather, Arial, sans-serif;
-  font-size: 16px;
-  color: green;
+.root {
+  max-width: 1980px;
+  min-height: 100dvh;
+  overflow: hidden;
 }

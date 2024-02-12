@@ -1,0 +1,37 @@
+.root {
+  /* Шрифты */
+
+  --font-family-main: "Golos Text", sans-serif;
+  --font-family-second: merriweather, sans-serif;
+  --font-family-third: "Montserrat", sans-serif;
+
+  --font-size-s: 16px;
+  --font-height-s: 1.3;
+  --font-s: var(--font-size-s) / var(--font-height-s) var(--font-family-main);
+
+  --font-size-m: 18px;
+  --font-height-m: 1.3;
+  --font-m: var(--font-size-m) / var(--font-height-m) var(--font-family-main);
+
+  --font-size-l: 22px;
+  --font-height-l: 1.1;
+  --font-l: var(--font-size-l) / var(--font-height-l) var(--font-family-main);
+
+  --font-size-xl: 60px;
+  --font-height-xl: 1.1;
+  --font-xl: var(--font-size-xl) / var(--font-height-xl) var(--font-family-main);
+
+  --font-weight-xs: 300;
+  --font-weight-s: 400;
+  --font-weight-m: 500;
+  --font-weight-l: 700;
+  --font-weight-xl: 900;
+
+  /* Цвета */
+
+  --bg-color: #E9DED4;
+  --primary-color: #313131;
+  --secondary-color: #1F1F1F;
+  --tertiary-color: #FFF;
+  --quaternary-color: #FBCE51;
+}
