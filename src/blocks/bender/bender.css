@@ -1,0 +1,29 @@
+.bender {
+  width: 100%;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 44px
+}
+
+.bender__image {
+  height: 609px;
+  width: 528px;
+  transform: translate(-27px, -45px);
+}
+
+.bender__description {
+  width: calc(100% + 54px);
+  height: calc(100% - 82px);
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  transform: translateX(-54px);
+}
+
+.bender__caption {
+  margin: 0;
+  transform: translateY(-15px);
+  font: var(--font-main);
+  font-weight: var(--font-weight-s);
+  color: var(--sixth-color);
+}

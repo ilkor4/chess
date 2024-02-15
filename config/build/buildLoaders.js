@@ -1,6 +1,11 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export function buildLoaders() {
+  const htmlLoader =           {
+    test: /\.html$/,
+    use: 'html-loader'
+  }
+
   const babelLoader = {
     test: /\.js$/,
     use: 'babel-loader',
@@ -8,11 +13,8 @@ export function buildLoaders() {
   };
 
   const fileLoader = {
-    test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
-    type: 'asset/resource',
-    generator: {
-      filename: '[name].[hash][ext]',
-    },
+    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+    type: 'asset/inline',
   };
 
   const cssLoader = {
@@ -26,6 +28,7 @@ export function buildLoaders() {
 
   return [
     babelLoader,
+    htmlLoader,
     fileLoader,
     cssLoader,
   ];

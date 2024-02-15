@@ -4,9 +4,18 @@
 @import url("../blocks/lead/lead.css");
 @import url("../blocks/lead-description/lead-description.css");
 @import url("../blocks/text-button/text-button.css");
+@import url("../blocks/running-line/running-line.css");
+@import url("../blocks/info/info.css");
+@import url("../blocks/idea/idea.css");
+@import url("../blocks/bender/bender.css");
+@import url("../blocks/table/table.css");
 
 .root {
+  margin: 0 auto;
   max-width: 1980px;
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
 }

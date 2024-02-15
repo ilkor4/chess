@@ -1,0 +1,9 @@
+.info {
+  width: 100%;
+  padding: 80px 72px;
+  box-sizing: border-box;
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}

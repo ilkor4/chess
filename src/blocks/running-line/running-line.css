@@ -1,0 +1,34 @@
+.running-line {
+  padding: 18px 12px;
+  box-sizing: border-box;
+  width: max-content;
+  background-color: #F54932;
+}
+
+.running-line__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.running-line__text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font: var(--font-l);
+  font-weight: var(--font-weight-s);
+  font-family: var(--font-family-second);
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+}
+
+.running-line__text::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-image: url("../../images/marker.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

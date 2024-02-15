@@ -27,7 +27,7 @@
   z-index: 6;
 }
 
-.lead__ellipse {
+.lead__background-ellipse {
   position: absolute;
   width: 660px;
   height: 616px;
@@ -40,7 +40,7 @@
   z-index: 1;
 }
 
-.lead__ellipse-text {
+.lead__background-ellipse-text {
   position: absolute;
   width: 660px;
   height: 676px;
@@ -54,7 +54,7 @@
   mix-blend-mode: overlay;
 }
 
-.lead__king {
+.lead__background-king {
   position: absolute;
   width: 110px;
   height: 260px;
@@ -67,7 +67,7 @@
   z-index: 3;
 }
 
-.lead__queen {
+.lead__background-queen {
   position: absolute;
   width: 120px;
   height: 260px;
@@ -80,8 +80,7 @@
   z-index: 3;
 }
 
-
-.lead__city {
+.lead__background-city {
   position: absolute;
   width: 1624px;
   height: 453px;
@@ -93,7 +92,19 @@
   z-index: 4;
 }
 
-.lead__border {
+.lead__background-city {
+  position: absolute;
+  width: 1624px;
+  height: 453px;
+  top: 270px;
+  left: 161px;
+  background-image: url("../../images/main/city.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+
+.lead__background-border {
   position: absolute;
   width: 1604px;
   height: 463px;
@@ -105,19 +116,7 @@
   z-index: 5;
 }
 
-.lead__city {
-  position: absolute;
-  width: 1624px;
-  height: 453px;
-  top: 270px;
-  left: 161px;
-  background-image: url("../../images/main/city.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 4;
-}
-
-.lead__pawn {
+.lead__background-pawn {
   position: absolute;
   width: 83px;
   height: 123px;
@@ -129,7 +128,7 @@
   z-index: 8;
 }
 
-.lead__horse {
+.lead__background-horse {
   position: absolute;
   width: 200px;
   height: 290px;
@@ -153,4 +152,49 @@
   z-index: 9;
 }
 
+@media screen and (width <= 1500px) {
+  .lead {
+    padding: 26px 72px 0;
+  }
+
+  .lead__background-ellipse {
+    left: unset;
+    right: 33px;
+  }
+
+  .lead__background-ellipse-text {
+    left: unset;
+    right: 33px;
+  }
+
+  .lead__background-queen {
+    left: unset;
+    right: 170px;
+  }
+
+  .lead__background-king {
+    left: unset;
+    right: 515px;
+  }
+
+  .lead__background-city {
+    left: unset;
+    right: -145px;
+  }
+
+  .lead__background-border {
+    left: unset;
+    right: -120px;
+  }
+
+  .lead__background-pawn {
+    left: unset;
+    right: 45px;
+  }
+
+  .lead__background-horse {
+    left: unset;
+    right: 330px;
+  }
+}
 

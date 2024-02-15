@@ -21,6 +21,14 @@
   --font-height-xl: 1.1;
   --font-xl: var(--font-size-xl) / var(--font-height-xl) var(--font-family-main);
 
+  --font-size-idea: 36px;
+  --font-height-idea: 1.35;
+  --font-idea: var(--font-size-idea) / var(--font-height-idea) var(--font-family-second);
+
+  --font-size-main: 20px;
+  --font-height-main: 1.2;
+  --font-main: var(--font-size-main) / var(--font-height-main) var(--font-family-main);
+
   --font-weight-xs: 300;
   --font-weight-s: 400;
   --font-weight-m: 500;
@@ -34,4 +42,7 @@
   --secondary-color: #1F1F1F;
   --tertiary-color: #FFF;
   --quaternary-color: #FBCE51;
+  --fifth-color: #F54932;
+  --sixth-color: #3057A2;
+  --seventh-color: #D0D0D0;
 }

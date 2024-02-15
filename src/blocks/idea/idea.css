@@ -1,0 +1,25 @@
+.idea {
+  width: 100%;
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.idea__title {
+  margin: 0;
+  width: 100%;
+  font: var(--font-idea);
+  font-weight: var(--font-weight-s);
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.idea__title_inverted {
+  color: var(--fifth-color);
+  font-weight: var(--font-weight-l);
+}
+
+.idea__image {
+  width: 394px;
+  height: 250px;
+}
