@@ -1,0 +1,26 @@
+.section-title {
+  max-width: 806px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 20px;
+}
+
+.section-title__text {
+  margin: 0;
+  font: var(--font-section);
+  font-weight: var(--font-weight-s);
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.section-title__text_main {
+  grid-column: 1/3;
+}
+
+.section-title__subtitle {
+  align-self: center;
+  margin: 0;
+  width: 280px;
+  font: var(--font-main);
+  color: var(--sixth-color);
+}

@@ -9,6 +9,8 @@
 @import url("../blocks/idea/idea.css");
 @import url("../blocks/bender/bender.css");
 @import url("../blocks/table/table.css");
+@import url("../blocks/stages/stages.css");
+@import url("../blocks/section-title/section-title.css");
 
 .root {
   margin: 0 auto;

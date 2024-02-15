@@ -38,6 +38,5 @@
 
 .table__text_crossed {
   margin-right: 15px;
-  text-decoration: line-through;
-  text-decoration-color: var(--fifth-color);
+  text-decoration: line-through 2px solid var(--fifth-color);
 }
