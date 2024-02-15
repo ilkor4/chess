@@ -853,12 +853,13 @@ template {
   height: calc(100% - 82px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 48px;
   transform: translateX(-54px);
 }
 
 .bender__caption {
   margin: 0;
+  transform: translateY(-15px);
   font: var(--font-main);
   font-weight: var(--font-weight-s);
   color: var(--sixth-color);
@@ -873,8 +874,12 @@ template {
 
 .table__row {
   display: grid;
-  grid-template-columns: 45% 55%;
-  border-collapse: collapse;
+  grid-template-columns: 44% 56%;
+  border-bottom: 2px solid var(--seventh-color);
+}
+
+.table__row:last-child {
+  border-bottom: unset;
 }
 
 .table__title {
@@ -885,7 +890,7 @@ template {
   font: var(--font-main);
   font-weight: var(--font-weight-s);
   color: rgba(49, 49, 49, 0.7);
-  border: 1px solid var(--seventh-color);
+  border-right: 2px solid var(--seventh-color);
 }
 
 .table__text {
@@ -896,7 +901,12 @@ template {
   font: var(--font-main);
   font-weight: var(--font-weight-m);
   color: var(--primary-color);
-  border: 1px solid var(--seventh-color);
+}
+
+.table__text_crossed {
+  margin-right: 15px;
+  text-decoration: line-through;
+  text-decoration-color: var(--fifth-color);
 }
 
 .root {
