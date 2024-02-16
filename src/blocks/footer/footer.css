@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  padding: 40px 72px 72px;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+}
+
+.footer__text {
+  margin: 0;
+  font: var(--font-s);
+  font-weight: var(--font-weight-s);
+  color: var(--primary-color);
+  line-height: 1.2;
+  opacity: .6;
+}

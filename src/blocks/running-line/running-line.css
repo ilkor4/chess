@@ -1,4 +1,11 @@
+@keyframes marquee{
+  to {
+    transform: translateX(-2315px);
+  }
+}
+
 .running-line {
+  align-self: start;
   padding: 18px 12px;
   box-sizing: border-box;
   width: max-content;
@@ -11,6 +18,7 @@
   list-style: none;
   display: flex;
   gap: 12px;
+  animation: marquee 10s linear infinite;
 }
 
 .running-line__text {

@@ -1,0 +1,48 @@
+.carousel-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.carousel-button {
+  padding: 0;
+  height: 44px;
+  width: 44px;
+  background-image: url("../../images/icons/button.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 100%;
+  outline: none;
+  cursor: pointer;
+  transition: .6s ease;
+}
+
+.carousel-button:hover {
+  background-image: url("../../images/icons/button-hover.svg");
+}
+
+.carousel-button_disabled {
+  background-image: url("../../images/icons/button-dsbl.svg");
+}
+
+.carousel-button_disabled:hover {
+  background-image: url("../../images/icons/button-dsbl.svg");
+  cursor: unset;
+}
+
+.carousel-button_left {
+  transform: rotate(180deg);
+}
+
+.carousel-buttons__text {
+  margin: 0;
+  font: var(--font-s);
+  font-weight: var(--font-weight-s);
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+.carousel-button__text_static {
+  opacity: .6;
+}

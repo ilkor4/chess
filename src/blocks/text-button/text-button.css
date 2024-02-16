@@ -1,5 +1,5 @@
 .text-button {
-  padding: 10px;
+  padding: 10px 20px;
   box-sizing: border-box;
   height: 72px;
   width: 100%;
@@ -16,7 +16,7 @@
 }
 
 .text-button_inverted {
-  padding: 9px;
+  padding: 10px 20px;
   background-color: transparent;
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);

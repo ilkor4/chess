@@ -18,7 +18,7 @@
 }
 
 .stages__item {
-  padding: 20px;
+  padding: 20px 21px 20px 20px;
   min-height: 112px;
   box-sizing: border-box;
   display: flex;
@@ -76,10 +76,10 @@
 
 .stages__item_with-img::after {
   content: '';
-  width: 500px;
+  width: 400px;
   height: 250px;
   position: absolute;
-  top: -110px;
+  top: -100px;
   left: 470px;
   background-image: url("../../images/plane.png");
   background-size: contain;

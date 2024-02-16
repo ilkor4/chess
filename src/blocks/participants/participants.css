@@ -1,0 +1,30 @@
+.participants {
+  padding: 105px 72px 140px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.participants__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.participants__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+  overflow: scroll;
+}
+
+.participants__list::-webkit-scrollbar {
+  display: none;
+}

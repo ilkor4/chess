@@ -1,0 +1,52 @@
+.person {
+  padding: 0 37px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.person__image {
+  width: 320px;
+  aspect-ratio: 1/1;
+  background-image: url("../../images/avatar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.person__title {
+  margin: 8px 0  0;
+  font: var(--font-person);
+  font-weight: var(--font-weight-m);
+  color: var(--primary-color);
+}
+
+.person__subtitle {
+  margin: -14px 0  0;
+  font: var(--font-main);
+  font-weight: var(--font-weight-s);
+  color: var(--primary-color);
+  opacity: .6;
+}
+
+.person__button {
+  padding: 6px 12px;
+  box-sizing: border-box;
+  font: var(--font-s);
+  font-weight: var(--font-weight-m);
+  color: var(--sixth-color);
+  background-color: transparent;
+  border: 1px solid var(--sixth-color);
+  border-radius: 62px;
+  outline: none;
+  cursor: pointer;
+}
+
+.person__button:hover {
+  background-color: var(--sixth-color);
+  color: var(--tertiary-color);
+}

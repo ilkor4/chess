@@ -11,6 +11,11 @@
 @import url("../blocks/table/table.css");
 @import url("../blocks/stages/stages.css");
 @import url("../blocks/section-title/section-title.css");
+@import url("../blocks/participants/participants.css");
+@import url("../blocks/carousel-buttons/carousel-buttons.css");
+@import url("../blocks/person/person.css");
+@import url("../blocks/footer/footer.css");
+
 
 .root {
   margin: 0 auto;

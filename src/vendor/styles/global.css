@@ -33,6 +33,10 @@
   --font-height-section: 1.2;
   --font-section: var(--font-size-section) / var(--font-height-section) var(--font-family-second);
 
+  --font-size-person: 24px;
+  --font-height-person: 1.2;
+  --font-person: var(--font-size-person) / var(--font-height-person) var(--font-family-main);
+
   --font-weight-xs: 300;
   --font-weight-s: 400;
   --font-weight-m: 500;
