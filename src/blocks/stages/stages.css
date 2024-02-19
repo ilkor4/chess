@@ -7,6 +7,16 @@
   gap: 54px;
 }
 
+.stages__image {
+  margin: 0 0 -81px 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  display: none;
+  transform: rotate(-3deg);
+  z-index: 3;
+}
+
 .stages__list {
   width: 100%;
   margin: 0;
@@ -18,6 +28,14 @@
 }
 
 .stages__item {
+  position: relative;
+  box-sizing: border-box;
+  background-image: url("../../images/stage.png");
+  background-size: cover;
+  z-index: 2;
+}
+
+.stages__text {
   padding: 20px 21px 20px 20px;
   min-height: 112px;
   box-sizing: border-box;
@@ -26,10 +44,6 @@
   font: var(--font-main);
   color: var(--primary-color);
   font-weight: var(--font-weight-m);
-  background-image: url("../../images/stage.png");
-  background-size: cover;
-  position: relative;
-  z-index: 2;
 }
 
 .stages__item::after {
@@ -46,7 +60,7 @@
   z-index: 1;
 }
 
-.stages__item::before {
+.stages__text::before {
   content: attr(data-number);
   width: 36px;
   height: 36px;
@@ -85,6 +99,73 @@
   background-size: contain;
   background-repeat: no-repeat;
   mix-blend-mode: unset;
+}
+
+.stages__buttons {
+  margin-top: 13px;
+  align-self: center;
+}
+
+@media screen and (width <= 1100px) {
+  .stages {
+    padding: 87px 20px 74px;
+    gap: 15px;
+  }
+
+  .stages__image {
+    display: flex;
+  }
+
+  .stages__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    scroll-snap-type: x mandatory;
+    overflow: scroll;
+  }
+
+  .stages__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stages__item {
+    padding: 62px 21px 20px 20px;
+    width: 335px;
+    min-height: 300px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .stages__text {
+    padding: 0;
+    width: 100%;
+    min-height: unset;
+    gap: 16px;
+    font-size: var(--font-size-caption);
+  }
+  .stages__item_long {
+    grid-row: unset;
+    grid-column: unset;
+  }
+
+  .stages__item_wide {
+    grid-row: unset;
+    grid-column: unset;
+  }
+
+  .stages__item_with-img {
+    display: flex;
+    grid-template-columns: unset;
+  }
+
+  .stages__item_with-img::after {
+    display: none;
+  }
 }
 
 

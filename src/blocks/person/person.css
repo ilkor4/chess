@@ -1,8 +1,9 @@
 .person {
   padding: 0 37px;
   box-sizing: border-box;
-  width: 100%;
+  width: 335px;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
   gap: 20px;
@@ -16,6 +17,7 @@
   background-image: url("../../images/avatar.png");
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 100%;
 }
 
 .person__title {
@@ -49,4 +51,18 @@
 .person__button:hover {
   background-color: var(--sixth-color);
   color: var(--tertiary-color);
+}
+
+@media screen and (width <= 1100px) {
+  .person {
+    padding: 0 10px;
+  }
+
+  .person__image {
+    width: 244px;
+  }
+
+  .person__subtitle {
+    margin: -11px 0  0;
+  }
 }

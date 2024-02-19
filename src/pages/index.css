@@ -11,15 +11,19 @@
 @import url("../blocks/table/table.css");
 @import url("../blocks/stages/stages.css");
 @import url("../blocks/section-title/section-title.css");
+@import url("../blocks/stages-buttons/stages-buttons.css");
 @import url("../blocks/participants/participants.css");
 @import url("../blocks/carousel-buttons/carousel-buttons.css");
 @import url("../blocks/person/person.css");
 @import url("../blocks/footer/footer.css");
 
 
+.ro {
+  width: 100%;
+}
+
 .root {
-  margin: 0 auto;
-  max-width: 1980px;
+  width: 100%;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;

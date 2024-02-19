@@ -43,6 +43,15 @@
   --font-weight-l: 700;
   --font-weight-xl: 900;
 
+  @media screen and (width <= 1100px) {
+    --font-size-xl: 36px;
+    --font-size-idea: 28px;
+    --font-size-caption: 18px;
+    --font-size-section: 36px;
+
+    --font-height-section: 1.1;
+  }
+
   /* Цвета */
 
   --bg-color: #E9DED4;
@@ -53,4 +62,5 @@
   --fifth-color: #F54932;
   --sixth-color: #3057A2;
   --seventh-color: #D0D0D0;
+  --eighth-color: #D9D9D9;
 }

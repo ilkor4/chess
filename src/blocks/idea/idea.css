@@ -23,3 +23,23 @@
   width: 394px;
   height: 250px;
 }
+
+@media screen and (width <= 1100px) {
+  .idea {
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  .idea__image-span {
+    margin: 24px 0 26px;
+    width: 335px;
+    height: 212px;
+    display: flex;
+    background-image: url("../../images/meeting.png");
+    background-size: contain;
+  }
+
+  .idea__image {
+    display: none;
+  }
+}

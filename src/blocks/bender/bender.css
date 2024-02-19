@@ -27,3 +27,30 @@
   font-weight: var(--font-weight-s);
   color: var(--sixth-color);
 }
+
+@media screen and (width <= 1100px) {
+  .bender {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bender__image {
+    width: calc(100% + 40px);
+    height: unset;
+    aspect-ratio: 1 / 1.15;
+    transform: translateX(-20px);
+  }
+
+  .bender__description {
+    width: 100%;
+    height: unset;
+    transform: unset;
+    gap: 28px;
+  }
+
+  .bender__caption {
+    margin-top: 13px;
+    font-size: var(--font-size-caption)
+  }
+}

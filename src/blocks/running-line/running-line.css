@@ -40,3 +40,26 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media screen and (width <= 1100px) {
+  @keyframes marquee{
+    to {
+      transform: translateX(-1715px);
+    }
+  }
+
+  .running-line {
+    padding: 10px 12px;
+  }
+
+  .running-line__text {
+    font: var(--font-s);
+    font-weight: var(--font-weight-s);
+    font-family: var(--font-family-second);
+    line-height: 1.1;
+  }
+
+  .running-line__list {
+    animation: marquee 20s linear infinite;
+  }
+}

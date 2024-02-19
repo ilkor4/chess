@@ -198,3 +198,72 @@
   }
 }
 
+@media screen and (width <= 1100px) {
+  .lead {
+    padding: 18px 20px 0;
+    min-height: 774px;
+    gap: 40px;
+  }
+
+  .lead__background-ellipse {
+    width: 295px;
+    height: 290px;
+    top: 421px;
+    right: 50px;
+  }
+
+  .lead__background-ellipse-text {
+    width: 300px;
+    height: 305px;
+    top: 421px;
+    right: 47px;
+  }
+
+  .lead__background-queen {
+    width: 47px;
+    height: 105px;
+    top: 500px;
+    right: 90px;
+    transform: rotate(7deg);
+  }
+
+  .lead__background-king {
+    width: 48px;
+    height: 117px;
+    right: 258px;
+    top: 543px;
+  }
+
+  .lead__background-city {
+    width: 885px;
+    height: 246px;
+    right: -109px;
+    top: 538px;
+  }
+
+  .lead__background-border {
+    width: 874px;
+    height: 252px;
+    right: -97px;
+    top: 532px;
+  }
+
+  .lead__background-pawn {
+    left: unset;
+    right: 45px;
+    display: none;
+  }
+
+  .lead__background-horse {
+    width: 101px;
+    height: 140px;
+    right: 128px;
+    top: 661px;
+  }
+
+  .lead__logo {
+    width: 213px;
+    height: 32px;
+  }
+}
+

@@ -46,3 +46,21 @@
   gap: 16px;
 }
 
+@media screen and (width <= 1100px) {
+  .lead-description {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .lead-description__caption {
+    text-align: left;
+  }
+
+  .lead-description__buttons {
+    box-sizing: border-box;
+    margin-top: 8px;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Getting Started</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <title>Getting Started</title>
 </head>
-<body>
+<body class="roo">
   <div class="root">
     <section class="lead">
       <div class="lead__background-ellipse"></div>
@@ -23,7 +24,7 @@
           <span class="lead-description__title_right">земного шара</span>
         </h1>
         <p class="lead-description__caption">
-          Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+          Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
         </p>
         <div class="lead-description__buttons">
           <button class="lead-description__button text-button">
@@ -32,7 +33,6 @@
           </button>
           <button class="lead-description__button text-button text-button_inverted">
             Подробнее
-            <br>
             о турнире
           </button>
         </div>
@@ -51,9 +51,11 @@
     <section class="info">
       <article class="info__idea idea">
         <h3 class="idea__title">
-          Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
+          Чтобы поддержать Международный васюкинский турнир
+            <span class="idea__image-span"></span>
+          посетите лекцию на тему:
           <span class="idea__title_inverted">
-            «Плодотворная дебютная идея»
+            «Плодотворная дебютная идея»
           </span>
         </h3>
         <img
@@ -85,11 +87,16 @@
               <th class="table__title">Дата и время мероприятия:</th>
               <td class="table__text">22 июня 1927 г. в 18:00</td>
             </tr>
-            <tr class="table__row">
-              <th class="table__title">Стоимость входных билетов:</th>
+            <tr class="table__row table__row_mob">
+              <th class="table__title">Плата за игру:</th>
               <td class="table__text">20 коп.</td>
             </tr>
             <tr class="table__row">
+              <th class="table__title">Стоимость входных билетов:</th>
+              <td class="table__text table__text_desk">20 коп.</td>
+              <td class="table__text table__text_mob">50 коп.</td>
+            </tr>
+            <tr class="table__row table__row_desk">
               <th class="table__title">Плата за игру:</th>
               <td class="table__text">50 коп.</td>
             </tr>
@@ -119,46 +126,69 @@
           Будущие источники обогащения васюкинцев
         </p>
       </div>
+      <img
+        alt="Изображение самолета"
+        src="../src/images/plane.png"
+        class="stages__image"
+      />
       <ul class="stages__list">
-        <li class="stages__item" data-number="1">
-          Строительство железнодорожной магистрали Москва-Васюки
+        <li class="stages__item">
+          <div class="stages__text" data-number="1">
+            Строительство железнодорожной магистрали Москва-Васюки
+          </div>
+          <div class="stages__text" data-number="2">
+            Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+          </div>
         </li>
-        <li class="stages__item" data-number="2">
-          Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+        <li class="stages__item">
+          <div class="stages__text" data-number="3">
+            Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+          </div>
         </li>
-        <li class="stages__item stages__item_long" data-number="3">
-          Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+        <li class="stages__item stages__item_long">
+          <div class="stages__text" data-number="4">
+            Строительство дворца для турнира
+          </div>
+          <div class="stages__text" data-number="5">
+            Размещение гаражей для гостевого автотранспорта
+          </div>
         </li>
-        <li class="stages__item" data-number="4">
-          Строительство дворца для турнира
+        <li class="stages__item">
+          <div class="stages__text" data-number="6">
+            Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+          </div>
         </li>
-        <li class="stages__item" data-number="5">
-          Размещение гаражей для гостевого автотранспорта
-        </li>
-        <li class="stages__item" data-number="6">
-          Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
-        </li>
-        <li class="stages__item stages__item_wide stages__item_with-img" data-number="7">
-          Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+        <li class="stages__item stages__item_wide stages__item_with-img">
+          <div class="stages__text" data-number="7">
+            Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+          </div>
         </li>
       </ul>
-      <div class="stages__plane"></div>
+      <div class="stages__buttons stages-buttons">
+        <button class="stages-button stages-button_left stages-button_disabled"></button>
+        <ul class="stages-buttons__steps">
+          <li class="stages-buttons__step stages-buttons"></li>
+          <li class="stages-buttons__step stages-buttons__step_disabled"></li>
+          <li class="stages-buttons__step stages-buttons__step_disabled"></li>
+          <li class="stages-buttons__step stages-buttons__step_disabled"></li>
+          <li class="stages-buttons__step stages-buttons__step_disabled"></li>
+        </ul>
+        <button class="stages-button stages-button_right"></button>
+      </div>
     </section>
     <section class="participants">
-      <div class="participants__container">
-        <h2 class="section-title__text">
-          Участники турнира
-        </h2>
-        <div class="carousel-buttons">
-          <button class="carousel-button carousel-button_left"></button>
-          <p class="carousel-buttons__text">
-            3
-            <span class="carousel-buttons__text carousel-button__text_static">
+      <h2 class="section-title__text">
+        Участники турнира
+      </h2>
+      <div class="participants__buttons carousel-buttons">
+        <button class="carousel-button carousel-button_left"></button>
+        <p class="carousel-buttons__text">
+          3
+          <span class="carousel-buttons__text carousel-button__text_static">
                / 6
             </span>
-          </p>
-          <button class="carousel-button carousel-button_right"></button>
-        </div>
+        </p>
+        <button class="carousel-button carousel-button_right"></button>
       </div>
       <ul class="participants__list">
         <li class="participants__item person">

@@ -16,7 +16,6 @@
 }
 
 .text-button_inverted {
-  padding: 10px 20px;
   background-color: transparent;
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
@@ -33,3 +32,14 @@
   border: none
 }
 
+@media screen and (width <= 1100px) {
+  .text-button {
+    height: 47px;
+  }
+
+  .text-button_inverted {
+    background-color: var(--tertiary-color);
+    border: none;
+    color: #1F1F1F;
+  }
+}
