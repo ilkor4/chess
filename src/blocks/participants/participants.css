@@ -8,8 +8,7 @@
 }
 
 .participants__buttons {
-  justify-self: flex-end;
-  align-self: center;
+  place-self: center flex-end;
 }
 
 .participants__list {

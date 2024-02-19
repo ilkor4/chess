@@ -92,18 +92,6 @@
   z-index: 4;
 }
 
-.lead__background-city {
-  position: absolute;
-  width: 1624px;
-  height: 453px;
-  top: 270px;
-  left: 161px;
-  background-image: url("../../images/main/city.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 4;
-}
-
 .lead__background-border {
   position: absolute;
   width: 1604px;
@@ -264,6 +252,10 @@
   .lead__logo {
     width: 213px;
     height: 32px;
+  }
+
+  .lead__br {
+    display: none;
   }
 }
 

@@ -1,6 +1,5 @@
 .root {
   /* Шрифты */
-
   --font-family-main: "Golos Text", sans-serif;
   --font-family-second: merriweather, sans-serif;
   --font-family-third: "Montserrat", sans-serif;
@@ -53,7 +52,6 @@
   }
 
   /* Цвета */
-
   --bg-color: #E9DED4;
   --primary-color: #313131;
   --secondary-color: #1F1F1F;

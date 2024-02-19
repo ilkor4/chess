@@ -1,7 +1,7 @@
 .person {
   padding: 0 37px;
   box-sizing: border-box;
-  width: 335px;
+  width: 394px;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
@@ -55,6 +55,7 @@
 
 @media screen and (width <= 1100px) {
   .person {
+    width: 335px;
     padding: 0 10px;
   }
 

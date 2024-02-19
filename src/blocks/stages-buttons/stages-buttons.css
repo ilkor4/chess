@@ -1,8 +1,8 @@
 .stages-buttons {
   width: max-content;
-  display: flex;
+  display: none;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .stages-button {
@@ -57,7 +57,7 @@
 
 @media screen and (width <= 1100px) {
   .stages-buttons {
-    gap: 16px;
+    display: flex;
   }
 
   .stages-button {

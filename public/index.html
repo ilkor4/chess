@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width , initial-scale=1.0">
-  <title>Getting Started</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Сайт-визитка шахматного клуба.">
+  <meta name="keywords" content="Шахматы, турнир, Бендер.">
+  <meta name="author" content="Il.kor">
+  <title>Клуб четырех коней</title>
+  <link rel="shortcut icon" href="../src/images/logo.svg" type="image/x-icon" />
 </head>
-<body class="roo">
+<body>
   <div class="root">
     <section class="lead">
       <div class="lead__background-ellipse"></div>
@@ -26,16 +32,17 @@
         <p class="lead-description__caption">
           Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
         </p>
-        <div class="lead-description__buttons">
-          <button class="lead-description__button text-button">
+        <nav class="lead-description__buttons">
+          <a href="#info" class="lead-description__button text-button">
             Поддержать
             шахматную мысль
-          </button>
-          <button class="lead-description__button text-button text-button_inverted">
+          </a>
+          <a href="#bender" class="lead-description__button text-button text-button_inverted">
             Подробнее
+            <br class="lead__br">
             о турнире
-          </button>
-        </div>
+          </a>
+        </nav>
       </article>
     </section>
     <article class="running-line">
@@ -48,7 +55,7 @@
         <li class="running-line__text">Лед тронулся, господа присяжные заседатели!</li>
       </ul>
     </article>
-    <section class="info">
+    <section id="info" class="info">
       <article class="info__idea idea">
         <h3 class="idea__title">
           Чтобы поддержать Международный васюкинский турнир
@@ -64,7 +71,7 @@
           src="../src/images/meeting.png"
         >
       </article>
-      <div class="bender">
+      <div id="bender" class="bender">
         <img
           class="bender__image"
           alt="Фотография Бендера."
@@ -132,7 +139,7 @@
         class="stages__image"
       />
       <ul class="stages__list">
-        <li class="stages__item">
+        <li class="stages__item stages__item_wide">
           <div class="stages__text" data-number="1">
             Строительство железнодорожной магистрали Москва-Васюки
           </div>
@@ -140,12 +147,12 @@
             Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
           </div>
         </li>
-        <li class="stages__item">
+        <li class="stages__item stages__item_long">
           <div class="stages__text" data-number="3">
             Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
           </div>
         </li>
-        <li class="stages__item stages__item_long">
+        <li class="stages__item stages__item_wide">
           <div class="stages__text" data-number="4">
             Строительство дворца для турнира
           </div>
@@ -158,7 +165,7 @@
             Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
           </div>
         </li>
-        <li class="stages__item stages__item_wide stages__item_with-img">
+        <li class="stages__item stages__item_with-img">
           <div class="stages__text" data-number="7">
             Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
           </div>

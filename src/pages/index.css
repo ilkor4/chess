@@ -1,27 +1,41 @@
+/* Подключил нормалайз, шрифты и глобальные переменные */
 @import url("../vendor/styles/normalize.css");
 @import url("../vendor/fonts/fonts.css");
 @import url("../vendor/styles/global.css");
+
+/* Подключил стили к секции вступление */
 @import url("../blocks/lead/lead.css");
 @import url("../blocks/lead-description/lead-description.css");
 @import url("../blocks/text-button/text-button.css");
+
+/* Подключил стили к секции вступление */
 @import url("../blocks/running-line/running-line.css");
+
+/* Подключил стили к секции информация */
 @import url("../blocks/info/info.css");
 @import url("../blocks/idea/idea.css");
 @import url("../blocks/bender/bender.css");
 @import url("../blocks/table/table.css");
+
+/* Подключил стили к секции этапы */
 @import url("../blocks/stages/stages.css");
 @import url("../blocks/section-title/section-title.css");
 @import url("../blocks/stages-buttons/stages-buttons.css");
+
+/* Подключил стили к секции участники */
 @import url("../blocks/participants/participants.css");
 @import url("../blocks/carousel-buttons/carousel-buttons.css");
 @import url("../blocks/person/person.css");
+
+/* Подключил стили к подвалу */
 @import url("../blocks/footer/footer.css");
 
-
-.ro {
-  width: 100%;
+/* Добавил плавный скролл */
+html {
+  scroll-behavior: smooth;
 }
 
+/* Добавил стили ко всей странице */
 .root {
   width: 100%;
   min-height: 100dvh;
@@ -29,4 +43,5 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  scroll-behavior: smooth;
 }

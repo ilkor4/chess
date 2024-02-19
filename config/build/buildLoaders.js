@@ -1,10 +1,10 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export function buildLoaders() {
-  const htmlLoader =           {
+  const htmlLoader = {
     test: /\.html$/,
-    use: 'html-loader'
-  }
+    use: 'html-loader',
+  };
 
   const babelLoader = {
     test: /\.js$/,

@@ -4,7 +4,11 @@
   height: 72px;
   width: 100%;
   background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  text-decoration: none;
   font: var(--font-s);
   font-weight: var(--font-weight-m);
   color: var(--tertiary-color);
