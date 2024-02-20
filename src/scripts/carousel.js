@@ -6,6 +6,7 @@ const carouselTextContainer = document.querySelector('.carousel-buttons__text');
 
 /* Создали локальные переменные */
 let scrollCarouselCounter = 1;
+let intervalCounter = 0;
 const scrollCarouselWidth = carouselContainer.scrollWidth;
 
 /* Функция измененения текста */
@@ -87,6 +88,23 @@ const swipeContainer = (side, breakpoint) => {
     carouselContainer.scrollLeft -= breakpoint;
   }
 };
+
+/* Функция зацикленной карусели */
+const slideCarousel = () => {
+  if (intervalCounter === 3 && scrollCarouselWidth === 2464) {
+    clearInterval(intervalId);
+    setInterval(slideLeft, 4000);
+  } else if (intervalCounter === 5) {
+    clearInterval(intervalId);
+    setInterval(slideLeft, 4000);
+  }
+
+  slideRight();
+  intervalCounter ++;
+};
+
+/* Создали интервал */
+const intervalId = setInterval(slideCarousel, 4000);
 
 /* Навешиваем обработчики */
 leftCarouselButton.addEventListener('click', slideLeft);
