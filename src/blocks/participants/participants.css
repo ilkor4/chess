@@ -22,6 +22,8 @@
   flex-wrap: nowrap;
   scroll-snap-type: x mandatory;
   overflow: scroll;
+  transition: .6s ease;
+  scroll-behavior: smooth;
 }
 
 .participants__list::-webkit-scrollbar {
@@ -33,7 +35,7 @@
     padding: 47px 20px 99px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 39px;
   }
 
   .participants__buttons {

@@ -2,7 +2,7 @@
   width: max-content;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
 }
 
 .carousel-button {
@@ -50,7 +50,7 @@
 
 @media screen and (width <= 1100px) {
   .carousel-buttons {
-    gap: 11px;
+    gap: 10px;
   }
 
   .carousel-button {

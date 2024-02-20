@@ -1,7 +1,9 @@
+// Импортировали стили
 import '../pages/index.css';
 
-function a() {
-  console.log('dndnd');
-}
+// Импортировали скрипт для этапов
+import '../scripts/stages.js';
 
-a();
+// Импортировали скрипт для карусели
+import '../scripts/carousel.js';
+
