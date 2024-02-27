@@ -6,6 +6,7 @@ const stagesStepsList = document.querySelectorAll('.stages-buttons__step');
 
 /* Создали локальные переменные */
 let scrollStagesIndex = 0;
+let timer = null;
 
 /* Функция измененения активного стэпа */
 const changeActiveStage = (counter) => {
@@ -23,16 +24,7 @@ const changeActiveStage = (counter) => {
 };
 
 /* Функция вычисления позиции карусели */
-const counterStagesPosition = (side = 'left') => {
-  if (side === 'right' && scrollStagesIndex !== 4) {
-    scrollStagesIndex += 1;
-  } else if (
-    side === 'left' &&
-    scrollStagesIndex !== 0
-  ) {
-    scrollStagesIndex -= 1;
-  }
-
+const controlStagesButtons = () => {
   if (scrollStagesIndex === 4) {
     disableButton(rightStagesButton);
   } else if (scrollStagesIndex === 0) {
@@ -41,20 +33,6 @@ const counterStagesPosition = (side = 'left') => {
     activateButton(rightStagesButton);
     activateButton(leftStagesButton);
   }
-};
-
-/* Функция слайда влево */
-const slideLeft = () => {
-  counterStagesPosition('left');
-  changeActiveStage(counterStagesPosition);
-  swipeContainer('left', 400);
-};
-
-/* Функция слайда вправо */
-const slideRight = () => {
-  counterStagesPosition('right');
-  changeActiveStage(counterStagesPosition);
-  swipeContainer('right', 400);
 };
 
 /* Функция отключения кнопки */
@@ -80,6 +58,32 @@ const swipeContainer = (side, breakpoint) => {
   }
 };
 
+const changeActiveStages = () => {
+  [].slice.call(stagesContainer.children).forEach((item, index) => {
+    if (Math.abs(
+        item.getBoundingClientRect().left -
+      stagesContainer.getBoundingClientRect().left,
+    ) < 40) {
+      scrollStagesIndex = index;
+      controlStagesButtons();
+      changeActiveStage(scrollStagesIndex);
+      console.log(scrollStagesIndex);
+    }
+  });
+};
+
 /* Навешиваем обработчики */
-leftStagesButton.addEventListener('click', slideLeft);
-rightStagesButton.addEventListener('click', slideRight);
+
+stagesContainer.addEventListener('scroll', () => {
+  clearTimeout(timer);
+
+  timer = setTimeout(() => {
+    clearTimeout(timer);
+    changeActiveStages();
+  }, 100);
+});
+
+leftStagesButton
+    .addEventListener('click', () => swipeContainer('left', 400));
+rightStagesButton
+    .addEventListener('click', () => swipeContainer('right', 400));
